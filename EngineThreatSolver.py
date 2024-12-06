@@ -2,7 +2,7 @@ import numpy as np
 
 class EngineThreatSolver:
     def __init__(self):
-        self.v_engine = "0.1.0"
+        self.v_engine = "0.2.0"
         self.board = None
         self.initialize_parameters()
 
