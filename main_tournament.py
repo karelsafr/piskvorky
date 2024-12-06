@@ -105,24 +105,14 @@ class TournamentManager:
 
 
 if __name__ == "__main__":
+    from Team_ABO_Engine import TeamABOEngine
     from EngineLinear import EngineLinear
-    from EngineConvo import EngineConvo
-    from EngineAI import EngineAI
 
-    # Příklad konfigurace s různými typy enginů
+    # Konfigurace s enginy
     engine_configs = [
         # Lineární enginy
-        (EngineLinear, "./temp_engines/LinEngine1.npz"),
-        (EngineLinear, "./temp_engines/LinEngine2.npz"),
-
-        # Konvoluční enginy
-        (EngineConvo, "./temp_engines/ConvEngine1.npz"),
-        (EngineConvo, "./temp_engines/ConvEngine2.npz"),
-
-        # AI enginy
-        (EngineAI, "./temp_engines/AiEngine1.npz"),
-        (EngineAI, "./temp_engines/AiEngine2.npz")
-    ]
+        (TeamABOEngine, "./temp_engines/winner_engine.npz"),
+        (EngineLinear, "./temp_engines/LinEngine1.npz"),]
 
     # Konfigurace turnaje
     tournament = TournamentManager(

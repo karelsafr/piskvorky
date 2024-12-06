@@ -3,8 +3,7 @@ import pygame
 from GameBoard import GameBoard
 from Player import Player
 from EngineLinear import EngineLinear
-from EngineConvo import EngineConvo
-from EngineAI import EngineAI
+from Team_ABO_Engine import TeamABOEngine
 import time
 from colors import *
 
@@ -161,12 +160,11 @@ class EngineComparison:
 
 
 if __name__ == "__main__":
-    # Example usage
     comparison = EngineComparison(
         engine1_class=EngineLinear,
         engine1_datafile="./temp_engines/LinEngine1.npz",
-        engine2_class=EngineConvo,
-        engine2_datafile="./temp_engines/ConvEngine1.npz",
+        engine2_class=TeamABOEngine,
+        engine2_datafile="./temp_engines/winner_engine.npz",
         num_games=20,
         display_game=True,
         delay=0.01  # second delay between moves

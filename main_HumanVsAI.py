@@ -145,14 +145,13 @@ class HumanVsAI:
 
 
 if __name__ == "__main__":
-    # Example usage with EngineLinear
-    from EngineLinear import EngineLinear
+    from Team_ABO_Engine import TeamABOEngine
 
     game = HumanVsAI(
-        engine_class=EngineLinear,
-        engine_datafile="./temp_engines/LinEngine1.npz",  # Optional: load trained parameters
+        engine_class=TeamABOEngine,
+        engine_datafile="./temp_engines/winner_engine.npz",  # Optional: load trained parameters
         display_game=True,
-        ai_starts=False  # Set to True if you want AI to make first move
+        ai_starts=False  # AI makes first move
     )
 
     result = game.run_game()

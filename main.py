@@ -6,8 +6,8 @@ from StartStopHandler import StartStopHandler
 from Manager import Manager
 from my_dataclasses import data_game_class
 from GameBoard import GameBoard
+from Team_ABO_Engine import TeamABOEngine
 from colors import *
-from EngineLinear import EngineLinear
 from SaveHandler import SaveHandler
 
 #################### User setting for AI
@@ -22,7 +22,7 @@ nGAMES = NCOLs * NROWs
 
 #################### dictionary setting for gen AI interface
 SETTING = {"RUN": True, "SAVE": False,
-           "Engine": EngineLinear, # zde si prohodím engine
+           "Engine": TeamABOEngine, # zde si prohodím engine
            "Generations": 7,
            "PaMutation": 0.1
            }
