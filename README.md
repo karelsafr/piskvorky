@@ -6,7 +6,7 @@
 
 ## Table of Contents
 1. Overview
-2. User Workflow
+2. User Workflow 
 3. Application Components
 4. Creating Your Own Engine
 5. Using the Framework
